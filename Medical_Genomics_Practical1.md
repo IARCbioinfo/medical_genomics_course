@@ -63,7 +63,7 @@ Have a look at the [NextFlow tutorial](https://seqera.io/training/).
 
 **a)** Create a working directory and clone inside the github repository https://github.com/IARCbioinfo/data_test.git. 
 
-**b)**A data test set is particularly useful to develop bioinformatics tools. Can you explain why? 
+**b)** A data test set is particularly useful to develop bioinformatics tools. Can you explain why? 
 
 <span style='color:#0000b3'>**Question 2:**</span> 
 
@@ -118,8 +118,8 @@ You will create a pipeline aiming at mapping RNAseq paired reads to a reference 
 
 <span style='color:#0000b3'>**Question 5:**</span>  [Salmon](https://salmon.readthedocs.io/en/latest/) will be used as a pseudo aligner tool.
 <ol>
-<li> **a)** Create an `environment.yml` file specifying that Salmon is requested. 
-<li> **b)** To use the command <code>-profile conda</code>, you should create a <code>nextflow.config</code> file.
+<li> Create an `environment.yml` file specifying that Salmon is requested. 
+<li> To use the command <code>-profile conda</code>, you should create a <code>nextflow.config</code> file.
 </ol>
 
 
@@ -136,11 +136,13 @@ You will create a pipeline aiming at mapping RNAseq paired reads to a reference 
 
 **a)** Write a new process in the previous script;
 
-**b)** The output from the indexing process must be converted into a parameter;
+**b)** Create an input section including the index and the read;
 
-**c)** Create a directive specifying the number of CPUs to use;
+**c)** The output from the indexing process must be converted into a parameter;
 
-**d)** The output files should be in a directory named `Alignments`
+**d)** Create a directive specifying the number of CPUs to use;
+
+**e)** The output files should be in a directory named `Alignments`
 
 **Expected outputs:**
 
