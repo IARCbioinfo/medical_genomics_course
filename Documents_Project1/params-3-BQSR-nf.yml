@@ -1,0 +1,6 @@
+input_folder: RNAseq-nf_abra_results/
+ref: GRCh38_gencode_v33_CTAT_lib_Apr062020.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa
+snp_vcf: GATK/Homo_sapiens_assembly38.dbsnp138.vcf
+indel_vcf: GATK/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+mem: 10
+cpu: 2
