@@ -1,0 +1,8 @@
+bam_folder: RNAseq-nf_output/BAM/
+ref: GRCh38_gencode_v33_CTAT_lib_Apr062020.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa
+gtf: GRCh38_gencode_v33_CTAT_lib_Apr062020.plug-n-play/ctat_genome_lib_build_dir/ref_annot.gtf
+bed: hg38_Gencode_V33_merged.bed
+junctions: true 
+rna: true
+mem: 40
+cpu: 5
