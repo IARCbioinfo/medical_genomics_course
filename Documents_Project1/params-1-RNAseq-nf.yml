@@ -6,10 +6,6 @@ cpu: 5
 mem: 40
 mem_QC: 4
 ref: GRCh38_gencode_v33_CTAT_lib_Apr062020.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa
-snp_vcf: GATK/dbsnp_146.hg38.vcf.gz
-indel_vcf: GATK/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
-multiqc_config: multiqc_config_organoids.yaml
 fastq_ext: fastq.gz
 STAR_mapqUnique: 60
 cutadapt: true
-
