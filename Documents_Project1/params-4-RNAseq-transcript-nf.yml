@@ -1,9 +1,0 @@
-input_file: input_RNAseq-transcript-nf_batch1.tsv
-ref: GRCh38_gencode_v33_CTAT_lib_Apr062020.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa
-annot_genome: hg38
-annot_provider: Gencode
-annot_version: v33
-gtf: GRCh38_gencode_v33_CTAT_lib_Apr062020.plug-n-play/ctat_genome_lib_build_dir/ref_annot.gtf
-mem: 10
-
-
