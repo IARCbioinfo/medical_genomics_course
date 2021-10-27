@@ -1,0 +1,11 @@
+name: practical1
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - nextflow=21.04.0
+  - salmon=1.3.0
+  - fastqc=0.11.9
+  - multiqc=1.9
+  - samtools=1.10
