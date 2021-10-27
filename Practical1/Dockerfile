@@ -17,8 +17,8 @@ LABEL about.license="GNU-3.0"
 MAINTAINER **nalcala** <**alcalan@iarc.fr**>
 
 ################## INSTALLATION ######################
-COPY environment.yml /
+COPY Practical1/environment.yml /
 RUN apt-get update && apt-get install -y procps && apt-get clean -y
 RUN conda config --set channel_priority strict
-RUN conda env create -n practical1 -f /Practical1/environment.yml && conda clean -a
+RUN conda env create -n practical1 -f environment.yml && conda clean -a
 ENV PATH /opt/conda/envs/practical1/bin:$PATH
