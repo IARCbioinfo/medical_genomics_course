@@ -1,10 +1,10 @@
 ################## BASE IMAGE #####################
-FROM continuumio/miniconda3:4.7.12
+FROM continuumio/miniconda3:4.10.3
 
 ################## METADATA #######################
 
 LABEL base_image="continuumio/miniconda3"
-LABEL version="4.7.12"
+LABEL version="4.10.3"
 LABEL software="rnaseq-nf"
 LABEL software.version="2021"
 LABEL about.summary="Container image containing all requirements for practical 1"
