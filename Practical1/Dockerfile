@@ -20,5 +20,11 @@ MAINTAINER **nalcala** <**alcalan@iarc.fr**>
 RUN apt-get update && apt-get install -y procps && apt-get clean -y
 RUN conda install -c conda-forge mamba
 COPY Practical1/environment.yml /
-RUN mamba create -n practical1 -f /environment.yml && conda clean -a
+RUN mamba env create -n practical1 
+RUN mamba install -n practical1 nextflow=21.04.0
+RUN mamba install -n practical1 salmon=1.3.0
+RUN mamba install -n practical1 fastqc=0.11.9
+RUN mamba install -n practical1 multiqc=1.9
+RUN mamba install -n practical1 samtools=1.10
+RUN mamba clean -a
 ENV PATH /opt/conda/envs/practical1/bin:$PATH
