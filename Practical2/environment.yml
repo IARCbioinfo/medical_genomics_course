@@ -1,0 +1,10 @@
+name: practical2
+channels:
+  - bioconda
+  - r
+  - conda-forge
+  - defaults
+dependencies:
+  - nextflow=21.04.0
+  - rstudio=1.1.456
+  - bioconductor-mofa2=1.4.0
