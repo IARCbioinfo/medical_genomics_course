@@ -20,11 +20,11 @@ MAINTAINER **nalcala** <**alcalan@iarc.fr**>
 RUN apt-get update && apt-get install -y procps && apt-get clean -y
 RUN conda install -c conda-forge mamba
 COPY Practical2/environment.yml /
-COPY Practical2/test_MOFA2.R /
+COPY Practical2/MOFA2_test.R /
 RUN conda env create -n practical2
 RUN R -e 'install.packages("BiocManager", repos="http://cran.us.r-project.org")'
 RUN R -e 'BiocManager::install("MOFA2")'
-RUN R < test_MOFA2.R --no-save
+RUN R < MOFA2_test.R --no-save
 #RUN mamba install -n practical2 nextflow=21.04.0
 #RUN mamba install -n practical2 -c r rstudio=1.1.456
 #RUN mamba install -n practical2 -c bioconda bioconductor-mofa2=1.4.0
