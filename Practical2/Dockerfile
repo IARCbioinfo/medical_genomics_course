@@ -19,7 +19,6 @@ MAINTAINER **nalcala** <**alcalan@iarc.fr**>
 ################## INSTALLATION ######################
 RUN apt-get update && apt-get install -y procps && apt-get clean -y
 RUN conda install -c conda-forge mamba
-COPY Practical1/environment.yml /
 RUN mamba env create -n practical2
 RUN mamba install -n practical2 nextflow=21.04.0
 RUN mamba install -n practical2 -c r rstudio=1.1.456
