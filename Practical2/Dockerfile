@@ -1,10 +1,10 @@
 ################## BASE IMAGE #####################
-FROM gtca/mofa2:latest
+FROM continuumio/miniconda3:4.10.3
 
 ################## METADATA #######################
 
-LABEL base_image="gtca/mofa2"
-LABEL version="latest"
+LABEL base_image="continuumio/miniconda3"
+LABEL version="4.10.3"
 LABEL software="medical_genomics"
 LABEL software.version="2021"
 LABEL about.summary="Container image containing all requirements for practical 2"
@@ -25,7 +25,6 @@ RUN conda env create -n practical2
 RUN R -e 'install.packages("BiocManager", repos="http://cran.us.r-project.org")'
 RUN R -e 'BiocManager::install("MOFA2")'
 RUN R < MOFA2_test.R --no-save
-#RUN mamba install -n practical2 nextflow=21.04.0
 #RUN mamba install -n practical2 -c r rstudio=1.1.456
 #RUN mamba install -n practical2 -c bioconda bioconductor-mofa2=1.4.0
 RUN mamba clean -a
