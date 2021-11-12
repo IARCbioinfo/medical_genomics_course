@@ -1,10 +1,10 @@
 ################## BASE IMAGE #####################
-FROM continuumio/miniconda3:4.10.3
+FROM gtca/mofa2:latest
 
 ################## METADATA #######################
 
-LABEL base_image="continuumio/miniconda3"
-LABEL version="4.10.3"
+LABEL base_image="gtca/mofa2"
+LABEL version="latest"
 LABEL software="medical_genomics"
 LABEL software.version="2021"
 LABEL about.summary="Container image containing all requirements for practical 2"
@@ -20,10 +20,9 @@ MAINTAINER **nalcala** <**alcalan@iarc.fr**>
 RUN apt-get update && apt-get install -y procps && apt-get clean -y
 RUN conda install -c conda-forge mamba
 COPY Practical2/environment.yml /
-RUN mamba env create -n practical2
-RUN mamba install -n practical2 nextflow=21.04.0
-RUN mamba install -n practical2 -c r rstudio=1.1.456
-RUN mamba install -n practical2 -c bioconda bioconductor-mofa2=1.4.0
+RUN conda env create -n practical2
+#RUN mamba install -n practical2 nextflow=21.04.0
+#RUN mamba install -n practical2 -c r rstudio=1.1.456
+#RUN mamba install -n practical2 -c bioconda bioconductor-mofa2=1.4.0
 RUN mamba clean -a
-RUN pip install mofapy2
 ENV PATH /opt/conda/envs/practical2/bin:$PATH

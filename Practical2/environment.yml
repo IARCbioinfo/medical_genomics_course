@@ -5,6 +5,6 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - nextflow=21.04.0
-  - rstudio=1.1.456
-  - bioconductor-mofa2=1.4.0
+    - rstudio=1.1.456
+    #  - python=3.10.0
+    #- pip=21.3
