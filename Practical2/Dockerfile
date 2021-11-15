@@ -24,7 +24,9 @@ COPY Practical2/MOFA2_test.R /
 RUN conda env create -n practical2
 ENV PATH /opt/conda/envs/practical2/bin:$PATH
 RUN R -e 'install.packages("BiocManager", repos="http://cran.us.r-project.org")'
+RUN R -e 'install.packages("tidyverse", repos="http://cran.us.r-project.org")'
 RUN R -e 'BiocManager::install("MOFA2")'
+RUN R -e 'BiocManager::install("tidyverse")'
 RUN R < MOFA2_test.R --no-save
 #RUN mamba install -n practical2 -c r rstudio=1.1.456
 #RUN mamba install -n practical2 -c bioconda bioconductor-mofa2=1.4.0
