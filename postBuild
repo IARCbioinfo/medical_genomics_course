@@ -1,2 +1,2 @@
-RUN R -e 'BiocManager::install("MOFA2")'
+R -e 'BiocManager::install("MOFA2")'
 pip install mofapy2
