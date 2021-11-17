@@ -4,4 +4,3 @@ channels:
 dependencies:
   - r-base=4.0.2
   - r-tidyverse
-  - r-bioconductor-mofa2
