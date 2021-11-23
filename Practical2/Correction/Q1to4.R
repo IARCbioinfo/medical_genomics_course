@@ -1,5 +1,8 @@
 library(tidyverse)
 library(MOFA2)
+# setup reticulate with correct python install
+library(reticulate)
+use_python(system("which python",intern=T), required=TRUE)
 
 # Q1
 #a) read data
@@ -52,3 +55,8 @@ plot_factors(mofa_trained)
 
 ##c) 
 plot_factor_cor(mofa_trained)
+
+## clean session
+rm(mofa_untrained)
+rm(list = c("DNAMeth_enhancer",  "DNAMeth_genebody",  "DNAMeth_promoter","RNA","file","opt_model","opt_train"))
+gc()
