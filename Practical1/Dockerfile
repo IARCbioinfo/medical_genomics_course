@@ -22,10 +22,10 @@ RUN conda install -c conda-forge mamba
 COPY Practical1/environment.yml /
 RUN mamba env create -n practical1 
 RUN mamba install -n practical1 nextflow=22.10.0
-RUN mamba install -n practical1 salmon=1.3.0
+RUN mamba install -n practical1 salmon=1.9.0
 RUN mamba install -n practical1 fastqc=0.11.9
-RUN mamba install -n practical1 multiqc=1.9
-RUN mamba install -n practical1 samtools=1.10
+RUN mamba install -n practical1 multiqc=1.13
+RUN mamba install -n practical1 samtools=1.16.1
 RUN mamba install -n practical1 tbb=2020.2
 RUN mamba clean -a
 ENV PATH /opt/conda/envs/practical1/bin:$PATH
