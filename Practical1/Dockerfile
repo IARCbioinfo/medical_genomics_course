@@ -26,6 +26,6 @@ RUN mamba install -n practical1 salmon=1.9.0
 RUN mamba install -n practical1 fastqc=0.11.9
 RUN mamba install -n practical1 multiqc=1.13
 RUN mamba install -n practical1 samtools=1.16.1
-RUN mamba install -n practical1 tbb=2020.2
+RUN mamba install -n practical1 tbb=2021.6.0
 RUN mamba clean -a
 ENV PATH /opt/conda/envs/practical1/bin:$PATH
