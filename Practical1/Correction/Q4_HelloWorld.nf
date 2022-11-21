@@ -1,8 +1,8 @@
-nextflow.enable.dsl=2
-
+//a) 
 params.greeting = "Hello World!"
 greetch = channel.from(params.greeting)
 
+//b)
 process sayhello(){
 	input:
 		val x
@@ -14,6 +14,7 @@ process sayhello(){
 	'''
 }
 
+//c)
 workflow {
    sayhello(greetch).view()
 }
