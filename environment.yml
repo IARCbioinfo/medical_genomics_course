@@ -1,7 +1,7 @@
 channels:
   - conda-forge
 dependencies:
-  - r-base=4.0.2
+  - r-base=4.2.2
   - r-tidyverse
   - r-biocmanager
   - pip:
