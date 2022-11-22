@@ -1,5 +1,6 @@
 ## General dependencies:
 install.packages("tidyverse")
+install.packages("Rcpp")
 
 ## BioC dependencies
 install.packages("BiocManager")

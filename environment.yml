@@ -4,5 +4,6 @@ dependencies:
   - r-base=4.2.2
   - r-tidyverse
   - r-biocmanager
+  - r-rcpp
   - pip:
           - mofapy2

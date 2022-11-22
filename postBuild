@@ -1,2 +1,3 @@
 R -e 'BiocManager::install("MOFA2")'
+R -e 'BiocManager::install("Rcpp")'
 pip install mofapy2
